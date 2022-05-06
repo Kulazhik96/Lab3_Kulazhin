@@ -1,0 +1,43 @@
+﻿<Window x:Class="Lab3_Kulazhin.Task2.ResultTable.FunctionValues"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3_Kulazhin.Task2.ResultTable"
+        mc:Ignorable="d"
+        Title="FunctionValues" Height="450" Width="800">
+    
+    <GroupBox Header="Task#2 - Cos(x)"
+              FontFamily="ISOCPEUR" FontSize="20">
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            
+            <Grid x:Name="ResultTable" ShowGridLines="True">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Row="0" Grid.Column="0"
+                         Text="Argument" FontFamily="ISOCPEUR" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         BorderBrush="Black" BorderThickness="3"
+                         IsEnabled="False"/>
+
+                <TextBox Grid.Row="0" Grid.Column="1"
+                         Text="Function" FontFamily="ISOCPEUR" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         BorderBrush="Black" BorderThickness="3"
+                         IsEnabled="False"/>
+
+                <TextBox Grid.Row="0" Grid.Column="2"
+                         Text="Terms summed" FontFamily="ISOCPEUR" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         BorderBrush="Black" BorderThickness="3"
+                         IsEnabled="False"/>
+            </Grid>
+        </ScrollViewer>
+    </GroupBox>
+</Window>
